@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title> Login Form </title>
+    <link rel="icon" type="image/x-icon" href="./formIcon.png">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <img class="LoginBG" src="formBG.jpeg" alt="Background">
+
+    <h1 class="header"> Login to get started </h1>
+
+
+    <div class="loginform formcenter">
+        <form id="form" onsubmit="return validateForm()" action="Home.html" target="_blank">
+
+            <div class="input-field">
+                <label for="Uname" class="Uname">Username</label>
+                <input type="text" class="Username" id="Uname" placeholder="Enter your username"  onkeyup="validateName()">
+                <label for="alert" class ="span" id="NameAlert"> </label>
+            </div>
+            <br>
+
+
+            <div class="input-field">
+                <label for="password" class="PWD">Password</label>
+                <input type="password" class="password" id="pass" placeholder="Enter your password" onkeyup="validatePassword()" >
+                <label for="alert" class ="span" id="PassAlert"> </lab>
+            </div>
+            <br>
+
+            <div class="input-field">
+                <button  type="submit" class="loginbtn" >Submit</button>
+                <label for="alert" class ="span" id= "SubmitAlert"> </label>
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <div class="register">
+
+        <h2 class="h1register"> Haven't registered yet?</h2>
+        <p class="h1register"> Do it NOW!</p>
+
+        <a href="register.html" target="_blank">
+            <button class="registerbtn">Register Now</button>
+        </a>
+
+    </div>
+
+    
+    <script defer src="/script.js"></script>
+
+
+</body>
+
+</html>

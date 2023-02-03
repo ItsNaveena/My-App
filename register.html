@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title> Register Now </title>
+    <link rel="icon" type="image/x-icon" href="formIcon.png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <img src="formBG.jpeg" alt="BG" class="homebg">
+    <h1 class="regheader">Fill in to get started!</h1>
+
+    <div class="container">
+
+        <form  action="Home.html" class="regform" id="regformcenter" target="_blank" onsubmit="return validateRegForm()">
+
+            <div class="input">
+                <label for="firstName" class="inputLabel">First Name</label>
+                <input type="text" id="firstName" class="textbox" placeholder="FirstName" onkeyup="validatefirstName()">
+                <label for="alert" class ="span" id="firstAlert"> </label>
+                <br>
+            </div>
+
+            <div class="input">
+                <label for="lastName" class="inputLabel">Last Name</label>
+                <input type="text" id="lastName" class="textbox" placeholder="LastName" onkeyup="validatelastName()">
+                <label for="alert" class ="span" id="lastAlert"> </label>
+                <br>
+            </div>
+
+            <div class="input">
+                <label for="email" class="inputLabel">Email</label>
+                <input type="email" id="email" class="textbox" placeholder="Enter your Email " onkeyup="validateEmail()">
+                <label for="alert" class ="span" id="emailAlert"> </label>
+                <br>
+            </div>
+
+            <div class="input">
+                <label for="createpassword" class="inputLabel">Create Password</label>
+                <input type="password" id="CreatePwd" class="textbox" placeholder="Create Password" onkeyup="validateCreatePwd()">
+                <label for="alert" class ="span" id="creatpwdAlert"> </label>
+                <br>
+            </div>
+
+            <div class="input">
+                <label for="ConfirmPwd" class="inputLabel">Confirm Password</label>
+                <input type="password" id="ConfirmPwd" class="textbox" placeholder="Confirm Password" onkeyup="validateConfirmPwd()">
+                <label for="alert" class ="span" id="confirmpwdAlert"> </label>
+                <br><br>
+
+            </div>
+
+
+            <button type="submit" id="regsubmitbtn" >Submit</button>
+            <label for="alert" class ="span" id="regsubmitAlert"> </label>
+
+    </div>
+
+    </form>
+
+    <script defer src="/script.js"></script>
+</body>
+
+
+</html>
