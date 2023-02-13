@@ -113,11 +113,11 @@ function validateConfirmPwd() {
     return false;
   } 
 
-  if (confirmPwd !== createPwd) {
+  if (createPwd != confirmPwd) {
     confirmpwdAlert.innerHTML = "Password does not match";
     return false;
   }
-
+  
   else {
     confirmpwdAlert.innerHTML = "";
     return true;
@@ -139,3 +139,20 @@ function validateRegForm() {
     return true;
   }
 }
+
+
+
+// for Home.html
+
+let signOut = document.querySelector('.signOut');
+let signoutClick = document.querySelector('.signoutClick');
+
+let profileDropdown = document.querySelector('.profileDropdown');
+let outClick = document.querySelector('.outClick');
+
+let profileImg = document.querySelector('.profileImg');
+
+profileImg.addEventListener('click', ()=>{
+    signOut.classList.toggle('signoutClick');
+    profileDropdown.classList.toggle('outClick');
+})

@@ -3,86 +3,46 @@
     <title>Welcome to Home</title>
     <link rel="icon" type="image/x-icon" href="homeIcon.jpg">
 
-    <style>
-
-        body{
-            margin: 0%;
-            padding: 0%;
-            font-family: 'Times New Roman', Times, serif,cursive;
-        }
-
-        .explorebg{
-            position: absolute;
-                
-                width: 100%;
-                height: 100%;
-
-        }
-
-
-
-        .exploreheader{
-
-            position: relative;
-                padding-top: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family:cursive;
-                text-shadow: 2px 2px white;
-        }
-
-        .explorebtn{
-            font-family:cursive;
-                border: none;
-                padding: 15px 25px;
-                margin-top: 15px;
-                background-color: rgb(247, 245, 240);
-                font-size: 18px;
-                font-weight: bold;
-                color: rgb(2, 13, 22);
-                border-radius: 10px;
-                position: relative;
-        }
-
-        .explorebtn:hover {
-                background-color: rgb(77, 7, 73);
-                color: white;
-                transition: 0.8s;
-
-
-            }
-
-            #explorebtncenter{
-                margin: 400px auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-            }
-
-
-
-
-    </style>
+   <link rel="stylesheet" href="/styles.css">
     
 </head>
 
-   
+
+   <div class="HomeContainer">
+
     <img src="Home BG.jpg" alt="BG" class="explorebg">
+
+    <div class="signOut signoutClick">
+        <div class="profileIcon">
+            <img src="/childs-head-963143_1920.png" alt="profile" class="profileImg">
+        </div>
+        <div class="profileDropdown outClick">
+            <ul>
+                <li><a href="/explore.html" target="_blank">Explore!</a></li>
+                <li><a href="/index.html">Sign Out!</a></li>
+
+            </ul>
+
+        </div>
+
+    
     <h1 class="exploreheader">Welcome to Home!</h1>
 
-    <a href="explore.html" target="_blank">
+    <a href="/explore.html" target="_blank">
         <button class="explorebtn" id="explorebtncenter">Explore!</button>
     </a>
 
+   
+
+    </div>
+</div>
     
 
    
     
 
 
-
+<script defer src="/script.js"></script>
 </body>
 
 </html>
